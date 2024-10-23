@@ -1,0 +1,23 @@
+@media screen and (width >= 768px) {
+    #cabecalho #menu {
+        display: block;
+    }
+
+    #cabecalho #menu ul {
+        display: flex;
+        flex-flow: row wrap;
+        background-color: lawngreen;
+        width: 50vw;
+        height: 35px;
+        justify-content: space-evenly;
+        flex: 1 1 auto;
+    }
+
+    #cabecalho #menu ul li {
+        line-height: 35px;
+    }
+
+    img.img-menu {
+        display: none;
+    }
+}
