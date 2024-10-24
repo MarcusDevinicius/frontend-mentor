@@ -9,6 +9,7 @@
 body, html {
     width: 100vw;
     height: 100vh;
+    
 }
 
 #cabecalho {
@@ -43,16 +44,22 @@ body, html {
 }
 
 img.img-menu {
-    background-color: green;
+    
     width: 35px;
     height: 35px;
     cursor: pointer;
 }
 
+img#btn-x {
+    position: relative;
+    top: 25px;
+    left: -6px;
+}
+
 #menuout {
     display: flex;
     position: absolute;
-    background-color: wheat;
+    background-color: whit;
     text-align: end;
     height: 50vh;
     width: 80vw;
@@ -86,4 +93,27 @@ img.img-menu {
     border-bottom: 1px solid black;
     
     width: 60vw;
+}
+
+main {
+    width: 100vw;
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > section.fst-sec{
+    display: block;
+    background-color: aquamarine;
+    width: 90vw;
+    margin:  auto;
+}
+
+main > section.fst-sec > img {
+    width: 100px;
+}
+
+main > section > article {
+    background-color: red;
 }
