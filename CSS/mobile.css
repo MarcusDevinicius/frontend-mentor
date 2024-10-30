@@ -7,9 +7,9 @@
 }
 
 body, html {
-    width: 100vw;
+    width: 93vw;
     height: 100vh;
-    
+    scroll-behavior: smooth;
 }
 
 #cabecalho {
@@ -21,6 +21,7 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
 }
 
 #cabecalho #menu {
@@ -50,6 +51,10 @@ img.img-menu {
     cursor: pointer;
 }
 
+img#burguer {
+    width: 45px; 
+}
+
 img#btn-x {
     position: relative;
     top: 25px;
@@ -59,12 +64,13 @@ img#btn-x {
 #menuout {
     display: flex;
     position: absolute;
-    background-color: whit;
+    background-color: white;
     text-align: end;
     height: 50vh;
     width: 80vw;
     list-style-type: none;
     top: 0px;
+    left: 17%;
     display: none;
 }
 
@@ -96,24 +102,137 @@ img#btn-x {
 }
 
 main {
-    width: 100vw;
-    background-color: darkcyan;
+    width: 93vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: auto;
+    margin-left: 8px;
 }
 
 main > section.fst-sec{
-    display: block;
-    background-color: aquamarine;
-    width: 90vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 93vw;
     margin:  auto;
+    padding: 10px;
+    padding-top: 90px;
 }
 
 main > section.fst-sec > img {
-    width: 100px;
+    display: block;
+    margin: auto;
+    width: 97%;
+    height: 340px;
 }
 
-main > section > article {
-    background-color: red;
+main > section.fst-sec h1 {
+    width: 310px;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 40px;
+    color: #040218;
+    margin-left: 7px;
+}
+
+main > section.fst-sec p#paragrafo {
+    font-family: "Inter";
+    font-weight: 200;
+    width: 400px;
+    font-size: 20px;
+    color: rgb(91, 90, 90);
+    margin-left: 7px;
+}
+
+main > section.fst-sec p#read {
+    background-color: #EF5E4E;
+    width: 190px;
+    text-align: center;
+    padding: 17px;
+    font-family: "Inter";
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-left: 7px;
+}
+
+section.scd-sec {
+    width: 93vw;
+    margin: auto;
+    padding-top: 25px;
+}
+
+main > section.scd-sec > article#txt {
+    background-color: #00001A;
+    width: 93vw;
+    padding: 20px;
+    padding-bottom: 2px;
+    margin-bottom: 50px;
+}
+
+main > section.scd-sec > article#txt h2 {
+    color: #E1AA5D;
+    font-size: 35px;
+    font-family: "Inter";
+}
+
+main > section.scd-sec > article#txt h3 {
+    color: white;
+    font-family: "Inter";
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+main > section.scd-sec > article#txt p {
+    color: rgb(176, 175, 175);
+    font-family: "Inter";
+    font-weight: 200;
+    width: 95%;
+    font-size: 22px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-bottom: 1px solid white;
+}
+
+main > section.scd-sec > article#txt p#ultimo-paragrafo {
+    border: none;
+}
+
+main > section.scd-sec > aside#com-imgs {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+main > section.scd-sec > aside#com-imgs div#retro-pcs {
+    display: flex;
+    gap: 19px;
+}
+
+main > section.scd-sec > aside#com-imgs #retro-pcs img {
+    width: 40%;
+    height: 200px;
+}
+
+main > section.scd-sec > aside#com-imgs .info {
+    font-family: "Inter";
+}
+
+main > section.scd-sec > aside#com-imgs .info h2 {
+    margin-bottom: 16px;
+    font-size: 40px;
+    color: #E1AA5D;
+}
+
+main > section.scd-sec > aside#com-imgs .info h3 {
+    margin-bottom: 16px;
+    color: #040218;
+}
+
+main > section.scd-sec > aside#com-imgs .info > p {
+    line-height: 30px;
+    font-size: 19px;
+    font-weight: 200;
+    color: rgb(86, 86, 86);
 }

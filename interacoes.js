@@ -28,3 +28,4 @@ function mudouTamanho() {
         burguer.style.display = 'block'
     }
 }
+
